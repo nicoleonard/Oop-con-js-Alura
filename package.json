@@ -1,0 +1,20 @@
+{
+  "name": "cuentasbancopopular",
+  "version": "1.0.0",
+  "description": "Gestion de cuentas corrientes del banco popular",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nicoleonard/Oop-con-js-Alura.git"
+  },
+  "author": "Nico Alura",
+  "license": "ISC",
+  "type":"module",
+  "bugs": {
+    "url": "https://github.com/nicoleonard/Oop-con-js-Alura/issues"
+  },
+  "homepage": "https://github.com/nicoleonard/Oop-con-js-Alura#readme"
+}
