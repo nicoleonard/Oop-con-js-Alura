@@ -6,6 +6,7 @@ class CuentaCorriente{
     #numero;
     #saldo;
     #agencia;
+    static cantidadCuentas = 0;
 
     set setCliente(valor){
         if(valor instanceof Cliente){
@@ -42,6 +43,8 @@ class CuentaCorriente{
         this.setSaldo = 0;
         this.setNumero = numero;
         this.setAgencia = agencia;
+        CuentaCorriente.cantidadCuentas++;
+
     }
 
     depositoEnCuenta(valor){
