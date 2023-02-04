@@ -1,8 +1,10 @@
 import{CuentaCorriente} from  './CuentaCorriente.js'
 import{Cliente} from  './Cliente.js'
- 
+import { CuentaAhorro } from './CuentaAhorro.js';
+import { Cuenta } from './Cuenta.js';
+
 const cliente1 = new Cliente("Leonard","32421412","41213123");
-const cuentaDeLeonard = new CuentaCorriente(cliente1,"1","001");
+const cuentaDeLeonard = new CuentaAhorro(cliente1,"1","001",0);
 const cliente2 = new Cliente("Elizondo","32581688","095191984");
 const cuentaDeElizondo = new CuentaCorriente(cliente2,"2","002");
 
