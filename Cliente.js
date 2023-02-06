@@ -2,6 +2,8 @@ export class Cliente{
     #nombreCliente;
     #dniCliente;
     #rutCliente;
+    #clave;
+
 
     set setNombreCliente(valor){
         this.#nombreCliente=valor;
@@ -11,6 +13,9 @@ export class Cliente{
     }
     set setRutCliente(valor){
         this.#rutCliente=valor;
+    }
+    set setClave(valor){
+        this.#clave = valor;
     }
 
     get getNombreCliente(){
@@ -23,10 +28,20 @@ export class Cliente{
         return this.#rutCliente;
     }
 
+
     constructor(nombreCliente, dniCliente, rutCliente){
         this.setNombreCliente = nombreCliente;
         this.setRutCliente = rutCliente;
         this.setDniCliente = dniCliente;
+        this.setClave = "";
+    }
+
+    asignarClave(valor){
+        this.setClave = valor;
+    }
+
+    autenticable(valor){ 
+        return this.#clave == valor;
     }
 
 }
