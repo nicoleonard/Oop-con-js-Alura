@@ -19,3 +19,5 @@ console.log(cuentaDeLeonard.verSaldo());
 console.log(cuentaDeElizondo.verSaldo());
 console.log(CuentaCorriente.cantidadCuentas);
 
+const cuentaSimple = new Cuenta(cliente1, 3, 321, 1000);
+

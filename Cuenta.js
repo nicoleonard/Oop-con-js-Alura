@@ -35,6 +35,9 @@ export class Cuenta{
 
 
     constructor(cliente, numero, agencia, saldo){
+        if(this.constructor == Cuenta){
+            throw new Error("No se puede instanciar objetos de la clase Cuenta");
+        }
         this.setNumero = numero;
         this.setCliente = cliente;
         this.setAgencia = agencia;
