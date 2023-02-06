@@ -36,7 +36,7 @@ export class Cuenta{
 
     constructor(cliente, numero, agencia, saldo){
         if(this.constructor == Cuenta){
-            throw new Error("No se puede instanciar objetos de la clase Cuenta");
+            throw new Error("No se puede instanciar objetos de la clase Cuenta porque es una clase abstracta");
         }
         this.setNumero = numero;
         this.setCliente = cliente;
@@ -53,7 +53,8 @@ export class Cuenta{
 
     }
     retirarDeCuenta(valor){
-        this._retirarDeCuenta(valor,0);
+        //metodo abstracto
+        throw new Error("Debe implementar el metodo retirarDeCuenta en su clase.")
     }
     _retirarDeCuenta(valor, comision){
         valor = valor * (1+comision/100);

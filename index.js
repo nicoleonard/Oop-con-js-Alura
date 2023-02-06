@@ -2,6 +2,7 @@ import{CuentaCorriente} from  './CuentaCorriente.js'
 import{Cliente} from  './Cliente.js'
 import { CuentaAhorro } from './CuentaAhorro.js';
 import { Cuenta } from './Cuenta.js';
+import { cuentaNomina } from './CuentaNomina.js';
 
 const cliente1 = new Cliente("Leonard","32421412","41213123");
 const cuentaDeLeonard = new CuentaAhorro(cliente1,"1","001",0);
@@ -18,6 +19,14 @@ cuentaDeElizondo.transferirParaCuenta(500,cuentaDeLeonard);
 console.log(cuentaDeLeonard.verSaldo());
 console.log(cuentaDeElizondo.verSaldo());
 console.log(CuentaCorriente.cantidadCuentas);
+
+const cuentaNominaLeonard = new cuentaNomina(cliente1, "1","010", 1000);
+console.log(cuentaNominaLeonard.verSaldo());
+cuentaNominaLeonard.depositoEnCuenta(1500);
+console.log(cuentaNominaLeonard.verSaldo());
+cuentaNominaLeonard.retirarDeCuenta(500);
+console.log(cuentaNominaLeonard.verSaldo());
+
 
 const cuentaSimple = new Cuenta(cliente1, 3, 321, 1000);
 
